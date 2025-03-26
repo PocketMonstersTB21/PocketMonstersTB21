@@ -1,0 +1,83 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    /* border: solid 1px; */
+    transition: 1s;
+}
+
+body {
+    height: 100dvh;
+    overflow: hidden;
+    background-image: url("../img/mainbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    min-width: 350px;
+    height: auto;
+    width: 400px;
+    filter: drop-shadow(4px 4px 6px rgb(91, 91, 91));
+}
+
+.modal-body {
+    background-color: #EBEEEF;
+    padding: 30px;
+    border-radius: 20px;
+    padding-top: 140px;
+}
+
+.modal-header {
+    transform: translateY(-45px);
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.left, .right{
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+}
+
+#squirtle{
+    position: relative;
+    width: 200px;
+    z-index: 1;
+    left: -160px;
+}
+
+#pikachu{
+    top: 150px;
+    left: -50px;
+    width: 200px;
+    position: relative;
+}
+
+#ash{
+    left: -120px;
+    top: 170px;
+    width: 400px;
+    position: relative;
+}
+
+.btn:hover{
+    background-color: #dd4b31;
+}
+
+@media (max-width: 900px) {
+    .form-container {
+        width: 350px;
+        transform: scale(0.9);
+    }
+}

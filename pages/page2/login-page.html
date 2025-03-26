@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>PokemonGo</title>
+</head>
+
+<body>
+
+    <div class="left">
+        <img src="assets/img/charizard.png" id ="charizard" alt="">
+        <img src="assets/img/charizard-front.png" id ="charizard-front" alt="">
+    </div>
+    <!-- Login Form -->
+    <div class="form-container">
+        <div class="modal-header d-flex justify-content-center flex-column">
+            <img src="assets/img/pokeballforlogin.png" alt=""
+                style="height: 130px; filter: drop-shadow(1px 1px 1px gray);">
+            <h5 style="margin: 0; font-size: 1rem; padding-top: 10px; font-family: 'Kumbh Sans', sans-serif;">Welcome back, Pokemon Master</h5>
+            <h6><a href="../page1/signup-page.html" style="text-decoration: none; font-size: 0.8rem; padding: 0; font-family: 'Kumbh Sans', sans-serif;">Don't
+                    have an account</a>
+            </h6>
+        </div>
+
+        <div class="modal-body border">
+            <form id="signupForm">
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="signupEmail" placeholder="name@example.com" required>
+                    <label for="signupEmail">Email address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="ign" placeholder="IGN" required>
+                    <label for="ign">In-Game Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="signupPassword" placeholder="Password" required>
+                    <label for="signupPassword">Password</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="playerID" placeholder="####-####-####" required>
+                    <label for="playerID">Player ID</label>
+                </div>
+
+                <button type="submit" class="btn btn-success w-100" style="font-weight: 700;  font-family: 'Lexend Deca', sans-serif;
+                ">LOG IN</button>
+            </form>
+        </div>
+    </div>
+    <div class="right">
+        <img src="assets/img/ashlogin.png" id = "ashlogin" alt="">
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
