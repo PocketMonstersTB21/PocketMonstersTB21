@@ -69,7 +69,7 @@ body {
 /* ===== Event Card ===== */
 .event-card {
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 3.5px solid #323275;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -86,7 +86,7 @@ body {
 /* ===== Event Image Container ===== */
 .event-img-container {
     width: 100%;
-    height: 180px;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -117,6 +117,7 @@ body {
 
 /* ===== Right Section: Featured Event ===== */
 .featured-container {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -128,7 +129,7 @@ body {
 /* ===== Featured Event Image ===== */
 .featured-img {
     width: 100%;
-    border: 2px solid #e76e4b;
+    border: 3.5px solid #e76e4b;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -152,11 +153,11 @@ body {
     color: white;
     padding: 12px 24px;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 30px;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
     box-shadow: 0 5px 15px rgba(245, 107, 71, 0.4);
     transition: all 0.2s ease-in-out;
 }
@@ -171,7 +172,7 @@ body {
 /* ===== Event Details Link ===== */
 .event-details-link {
     color: #f08080;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
