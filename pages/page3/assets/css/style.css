@@ -26,19 +26,31 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 25px;
+    font-size: 18px;
     color: #333;
     text-decoration: none;
     font-weight: bold;
     display: flex;
     align-items: center;
     gap: 5px;
-    transition: color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .back-to-store:hover {
-    color: #ff3e3e;
+    transform: translateX(-5px); /* Moves slightly to the left */
+    color: #e76e4b; /* Changes color on hover */
 }
+
+.back-to-store i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Icon hover effect */
+.back-to-store:hover i {
+    transform: rotate(-45deg); /* Rotates icon slightly */
+}
+
 
 /* Back Arrow Icon */
 .back-icon {
