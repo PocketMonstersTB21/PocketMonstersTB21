@@ -13,9 +13,9 @@ body {
 /* ===== Main Container ===== */
 .container {
     background-color: #fff;
-    width: 95%;
+    width: 95%; 
     max-width: 1200px; 
-    padding: 50px 40px; 
+    padding: 50px 40px;
     border-radius: 15px;
     box-shadow: none; 
     text-align: center;
