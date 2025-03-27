@@ -1,0 +1,207 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfcf8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== Back to Store Button ===== */
+.back-to-store {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.back-to-store:hover {
+    transform: translateX(-5px); 
+    color: #e76e4b;
+}
+
+.back-to-store i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Icon hover effect */
+.back-to-store:hover i {
+    transform: rotate(-45deg);
+}
+
+/* ===== Main Container ===== */
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 90%;
+    max-width: 500px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* ===== Payment Box ===== */
+.payment-box {
+    width: 100%;
+}
+
+/* Title */
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #749cab;
+}
+
+/* Sub Title */
+.sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #749cab;
+    text-align: left;
+}
+
+/* ===== Payment Methods ===== */
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* ===== Payment Options ===== */
+.payment-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Payment Button Styles */
+.payment-btn {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.payment-btn img {
+    width: 80px;
+    height: auto;
+}
+
+.payment-btn:hover {
+    border-color: #4CAF50;
+    background-color: #f9f9f9;
+}
+
+/* Selected Payment Style */
+.payment-btn.selected {
+    border-color: #4CAF50;
+    background-color: #e8f5e9;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Button styling */
+.confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+/* ===== Form Section ===== */
+.payment-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Fields */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Form Row */
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+/* Form Columns */
+.col {
+    width: 50%;
+}
+
+/* ===== Button Section ===== */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Back to Cart Button */
+.back-btn {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+    color: #e76e4b;
+}
+
+/* Confirm Button */
+.confirm-btn {
+    background-color: #0ea498;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #13856a;
+}
