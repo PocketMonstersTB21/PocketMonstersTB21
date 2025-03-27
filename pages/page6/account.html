@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account</title>
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+
+    <a href="index.html" class="back-to-store">
+        <i class="bi bi-arrow-left-circle"></i> Back to Store
+    </a>
+
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-top">
+                <img src="assets/img/37.png" alt="Avatar" class="profile-avatar">
+                <img src="assets/img/profile.png" alt="Profile Text" class="profile-text">
+            </div>
+        </div>
+
+
+        <div class="profile-content">
+            <h2 class="username">Username</h2>
+
+            <div class="profile-details">
+                <p><strong>Level:</strong> xx</p>
+
+                <div class="xp-section">
+                    <img src="assets/img/bluebar.png" alt="XP Icon" class="xp-icon">
+                </div>
+
+                <p><strong>Email:</strong> xxx@gmail.com</p>
+                <p><strong>Password:</strong> xxxxxxx</p>
+                <p><strong>Start Date:</strong> 2025-xx-xx</p>
+
+                <div class="coins">
+                    <img src="assets/img/pokecoin.png" alt="PokeCoins" class="coin-icon">
+                    <span>0 PokeCoins</span>
+                </div>
+            </div>
+
+            <button class="sign-out-btn">
+                <i class="bi bi-box-arrow-right"></i> Sign Out
+            </button>
+        </div>
+    </div>
 </body>
+
 </html>
