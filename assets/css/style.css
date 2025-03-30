@@ -1,8 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap');
 
 * {
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 body {
@@ -10,7 +10,6 @@ body {
 }
 
 nav {
-
 
     .logo {
         width: 120px;
@@ -87,7 +86,68 @@ nav {
 }
 
 #staticPart {
-    height: 700px;
+    /* height: 590px; */
+    /* border: solid; */
+    padding-top: 60px;
+
+    *{
+        /* border: solid 0.4px; */
+    }
+
+    h1{
+        font-weight: bold;
+        font-family: "League Spartan", sans-serif;
+        letter-spacing: 5px;
+        font-size: 30px;
+        padding: 0 10vw;
+    }
+
+    span{
+        color: #e02929;
+    }
+
+    .image-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #firstStatic{
+            max-width: 1100px;
+            width: 100vw;
+            min-width: 500px;
+        }
+
+
+        #staticTab{
+            display: none;
+            width: 100%;
+        }
+    }
+
+    .shopnow{
+        position: relative;
+        top: -115px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 170px;
+        padding: 10px;
+        border: none;
+        border-radius: 50px;
+        background-color: rgb(0, 148, 0);
+        
+        text-align: center;
+        text-decoration: none;
+
+        color: white;
+        font-size: 1.2rem;
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: bold;
+    }
+
+    .shopnow:hover{
+        background-color: rgb(0, 87, 0);
+    }
+
 }
 
 /* FOOTER  */
@@ -786,7 +846,9 @@ nav {
         display: none;
     }
 
-
+    #staticPart{
+        padding: 60px 0px;
+    }
 
 
     #featuredCarousel {
@@ -924,6 +986,26 @@ nav {
 }
 
 @media (max-width: 500px) {
+
+    #staticPart{
+        .image-content{
+            img{
+                display: none;
+            }
+
+            #staticTab{
+                display: block;
+            }
+
+        }
+
+
+
+        .shopnow{
+            top: 0;
+            width: 150px;
+        }
+    }
 
     #featuredCarousel {
         height: 700px;
