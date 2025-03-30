@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const username = localStorage.getItem("ign") || "Username";
+    document.getElementById("profileUsername").textContent = username;
+});
+
 //10 numbers to validate the code
 function applyCode() {
     const code = document.getElementById('codeInput').value.trim();
@@ -10,3 +15,4 @@ function applyCode() {
         alert(`Code "${code}" applied successfully! 🎉`);
     }
 }
+

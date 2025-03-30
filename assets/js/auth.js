@@ -34,11 +34,16 @@ function handleLogin() {
 
             const email = document.getElementById("loginEmail").value;
             const password = document.getElementById("loginPassword").value;
+            const ign = document.getElementById("ign").value;
 
             // Example authentication (Replace with actual backend validation)
             if (email === "user@pokemongo.com" && password === "pocketmonsters123") {
                 localStorage.setItem("loggedIn", "true");
-                localStorage.setItem("username", email);
+                localStorage.setItem("loginEmail", email);
+                localStorage.setItem("signupPassword", password);
+                localStorage.setItem("ign", ign); // Store IGN
+
+                updateProfile(); // Update profile UI
 
                 // Redirect to landing page
                 window.location.href = "../../../index.html";
@@ -49,6 +54,45 @@ function handleLogin() {
     }
 }
 
+function togglePassword() {
+    const passwordSpan = document.getElementById("profilePassword");
+    const toggleButton = document.getElementById("togglePassword");
+
+    if (passwordSpan.getAttribute("data-hidden") === "true") {
+        // Show actual password
+        passwordSpan.textContent = localStorage.getItem("signupPassword") || "xxxxxxx";
+        passwordSpan.setAttribute("data-hidden", "false");
+        toggleButton.textContent = "Hide";
+    } else {
+        // Hide password
+        passwordSpan.textContent = "xxxxxxx";
+        passwordSpan.setAttribute("data-hidden", "true");
+        toggleButton.textContent = "Show";
+    }
+}
+
+function updateProfile() {
+    const username = localStorage.getItem("ign") || "Username";
+    const email = localStorage.getItem("loginEmail") || "xxx@gmail.com";
+    const password = localStorage.getItem("loginPassword") || "xxxxxxx";
+    const startDate = localStorage.getItem("startDate") || "2025-xx-xx";
+
+    // Function to safely update an element's text content
+    function updateElement(id, value) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.textContent = value;
+        } else {
+            console.warn(`Element with ID "${id}" not found.`);
+        }
+    }
+
+    updateElement("profileUsername", username);
+    updateElement("profileEmail", email);
+    updateElement("profilePassword", password);
+    updateElement("startDate", startDate);
+}
+
 function handleSignup() {
     const form = document.getElementById("signupForm");
 
@@ -57,7 +101,7 @@ function handleSignup() {
             event.preventDefault(); // Prevent default form submission
 
             const email = document.getElementById("signupEmail").value;
-            const password = document.getElementById("signupPassword").value;
+            const password = document.getElementById("loginPassword").value;
             const reEnterPassword = document.getElementById("re-enterPassword").value;
             const ign = document.getElementById("ign").value;
             const playerID = document.getElementById("playerID").textContent;

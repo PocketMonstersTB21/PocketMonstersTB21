@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap');
+
+
 /* ===== Page Setup ===== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     background-color: #f9f9f3;
     margin: 0;
     padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-image: url("../../../../assets/img/itemboxesbg.jpeg");
 }
 
 /* ===== Back to Store Button ===== */
@@ -44,7 +52,6 @@ body {
     border-radius: 25px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    margin: 80px auto;
     border: 2px solid #6b5dd3;
 }
 
