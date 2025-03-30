@@ -207,3 +207,121 @@ h1 {
 .footer-text a:hover {
     text-decoration: underline;
 }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+        margin-top: 40px; 
+    }
+
+    h1 {
+        font-size: 36px; 
+    }
+
+    .profile-box {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .avatar {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .profile-info {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .profile-info strong {
+        font-size: 20px;
+    }
+
+    .coins {
+        font-size: 14px;
+    }
+
+    .coin-icon {
+        width: 25px;
+    }
+
+    .code-section {
+        width: 100%;
+    }
+
+    .code-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .apply-btn {
+        width: 100%;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .back-to-store {
+        font-size: 14px;
+    }
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile-info strong {
+        font-size: 18px;
+    }
+
+    .coins {
+        font-size: 12px;
+    }
+
+    .coin-icon {
+        width: 20px;
+    }
+
+    .code-section label {
+        font-size: 18px;
+    }
+
+    .code-input {
+        padding: 10px;
+    }
+
+    .apply-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
+    .container {
+        margin-top: 20px; 
+    }
+}
