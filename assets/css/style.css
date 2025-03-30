@@ -11,6 +11,10 @@ body {
 
 nav {
 
+    .container{
+        /* margin-right: 0px; */
+    }
+
     .logo {
         width: 120px;
         height: auto;
@@ -37,6 +41,10 @@ nav {
         width: 40px; 
         height: 40px; 
         border-radius: 50%;
+    }
+
+    #loginsignupbuttons{
+        margin-left: 20px;
     }
 }
 
@@ -939,9 +947,6 @@ nav {
 
 
 }
-
-
-
 
 @media screen and (max-width: 768px) {
     .slide-content {

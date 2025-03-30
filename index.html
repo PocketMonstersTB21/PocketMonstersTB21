@@ -9,63 +9,62 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/auth.js"></script>
     <title>PokemonGo</title>
 </head>
 
 <body>
-    <!-- Navbar Before Login
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar-guest">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="assets/img/pokemongo.png" alt="Pokémon GO" class="logo me-2">
-                <span class="store-name">Web Store</span>
-            </a>
-            <div class="d-flex">
-                <button class="btn btn-outline-light me-2" <a href="pages/page2/login-page.html" style="text-decoration: none; color: white;">Login</a></button>
-                <button class="btn btn-warning"><a href="pages/page1/signup-page.html" style="text-decoration: none; color: white;">Sign Up</a></button>
-            </div>
-        </div>
-    </nav>-->
-
     <!-- Full Navbar After Login -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar-auth">
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark" id="navbar-auth">
         <div class="container">
+            <!-- Logo and Web Store Text -->
             <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
                 <img src="assets/img/pokemongo.png" alt="Pokémon GO" class="logo me-2">
                 <span class="store-name">Web Store</span>
             </a>
 
+            <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Hyperlinks -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="pages\page3\code-redeem.html">Code Redemption</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages\page3\code-redeem.html">Code Redemption</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="pages\page4\event.html">Event Ticketing</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages\page5\payment.html">Payment</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Transaction</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages\page6\account.html">
+                    <li class="nav-item" id="loginsignupbuttons">
+                        <div class="d-flex">
+                            <button class="btn btn-outline-light me-2">
+                                <a href="pages/page2/login-page.html" style="text-decoration: none; color: white;">Login</a>
+                            </button>
+                            <button class="btn btn-warning">
+                                <a href="pages/page1/signup-page.html" style="text-decoration: none; color: white;">Sign Up</a>
+                            </button>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item d-none" id="profile-button">
+                        <!-- Profile Button -->
+                        <a href="pages/page6/account.html" style="text-decoration: none;">
                             <img src="assets/img/37.png" alt="Profile" class="nav-profile-img">
                         </a>
+                        <button class="btn btn-danger ms-2" onclick="logout()">Logout</button>
                     </li>
-                    <div class="d-flex">
-                        <button class="btn btn-outline-light me-2"><a href="pages/page2/login-page.html"
-                                style="text-decoration: none; color: white;">Login</a></button>
-                        <button class="btn btn-warning"><a href="pages/page1/signup-page.html"
-                                style="text-decoration: none; color: white;">Sign Up</a></button>
-                    </div>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-person-circle" style="font-size: 1.5rem;"></i></a>
-                    </li> -->
+
                 </ul>
             </div>
+
         </div>
+
     </nav>
 
+    
     <!-- Landing Page Video Section -->
     <section class="landing-section">
         <div class="overlay"></div>
@@ -80,29 +79,30 @@
     <section id="staticPart">
         <div class="fluid-container content-container d-flex flex-column">
             <div class="d-flex justify-content-center align-items-center">
-                <h1 class="text-center"><span>15% DISCOUNT </span>FOR YOUR FIRST WEB STORE PURCHASE ON ANY ITEM $9.99 OR MORE!</h1>
+                <h1 class="text-center"><span>15% DISCOUNT </span>FOR YOUR FIRST WEB STORE PURCHASE ON ANY ITEM $9.99 OR
+                    MORE!</h1>
             </div>
             <div class="image-content">
                 <img src="assets/img/static.png" id="firstStatic" alt="">
                 <img src="assets/img/tableStatic.png" id="staticTab" alt="">
             </div>
-            <a class="shopnow" href = "#itemBoxes">
+            <a class="shopnow" href="#itemBoxes">
                 SHOP NOW
             </a>
         </div>
     </section>
 
-        <!-- Mini Navbar -->
-        <div class="mini-navbar">
-            <a href="#featuredCarousel" class="mini-link" id="featuredCarouselMenu"
-                onclick="transferActive('featuredCarouselMenu')">Featured</a>
-            <a href="#itemBoxes" class="mini-link" id="itemBoxesMenu" onclick="transferActive('itemBoxesMenu')">Item
-                Boxes</a>
-            <a href="#pokecoinsSection" class="mini-link" id="pokecoinsMenu"
-                onclick="transferActive('pokecoinsMenu')">PokeCoins</a>
-            <a href="#dailybundlesSection" class="mini-link" id="daily-bundlesMenu"
-                onclick="transferActive('daily-bundlesMenu')">Daily Bundles</a>
-        </div>
+    <!-- Mini Navbar -->
+    <div class="mini-navbar">
+        <a href="#featuredCarousel" class="mini-link" id="featuredCarouselMenu"
+            onclick="transferActive('featuredCarouselMenu')">Featured</a>
+        <a href="#itemBoxes" class="mini-link" id="itemBoxesMenu" onclick="transferActive('itemBoxesMenu')">Item
+            Boxes</a>
+        <a href="#pokecoinsSection" class="mini-link" id="pokecoinsMenu"
+            onclick="transferActive('pokecoinsMenu')">PokeCoins</a>
+        <a href="#dailybundlesSection" class="mini-link" id="daily-bundlesMenu"
+            onclick="transferActive('daily-bundlesMenu')">Daily Bundles</a>
+    </div>
 
     <!-- Featured Section -->
     <section id="featuredCarousel">

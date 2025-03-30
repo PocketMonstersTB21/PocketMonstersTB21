@@ -20,39 +20,50 @@
         <div class="modal-header d-flex justify-content-center flex-column">
             <img src="/pages/page1/assets/img/pokeballforlogin.png" alt=""
                 style="height: 130px; filter: drop-shadow(1px 1px 1px gray);">
-            <h5 style="margin: 0; font-size: 1rem; padding-top: 10px; font-family: 'Kumbh Sans', sans-serif;">Be an official Pokemon Trainer now.</h5>
-            <h6><a href="../page2/login-page.html" style="text-decoration: none; font-size: 0.8rem; padding: 0; font-family: 'Kumbh Sans', sans-serif;">Already have an account?</a>
+            <h5 style="margin: 0; font-size: 1rem; padding-top: 10px; font-family: 'Kumbh Sans', sans-serif;">Be an
+                official Pokemon Trainer now.</h5>
+            <h6><a href="../page2/login-page.html"
+                    style="text-decoration: none; font-size: 0.8rem; padding: 0; font-family: 'Kumbh Sans', sans-serif;">Already
+                    have an account?</a>
             </h6>
         </div>
 
         <div class="modal-body border">
             <form id="signupForm">
 
-                <div class="form-floating mb-3">
+                <div class="form-floating mb-2">
                     <input type="email" class="form-control" id="signupEmail" placeholder="name@example.com" required>
                     <label for="signupEmail">Email address</label>
                 </div>
 
-                <div class="form-floating mb-3">
+                <div class="form-floating mb-2">
                     <input type="password" class="form-control" id="signupPassword" placeholder="Password" required>
                     <label for="signupPassword">Password</label>
                 </div>
 
-                <div class="form-floating mb-3">
+                <div class="form-floating mb-2">
                     <input type="password" class="form-control" id="re-enterPassword" placeholder="Password" required>
                     <label for="re-enterPassword">Re-Enter Password</label>
                 </div>
 
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="ign" placeholder="name@example.com" required>
+                <div class="form-floating mb-2">
+                    <input type="text" class="form-control" id="ign" placeholder="In-Game Name" required>
                     <label for="ign">In-Game Name</label>
                 </div>
 
-                <div class="mb-3 d-flex flex-column justify-content-center align-items-center p-0">
-                    <h3 style="margin: 0;">####-####-####</h3>
-                    <h6 style="margin: 0;">Player ID</h6>
+                <!-- Player ID Generator -->
+                <div class="mb-2 text-center generator">
+                    <label class="form-label">Player ID</label>
+                    <div id="playerID" class="id-container"></div>
+                    <button type="button" class="btn btn-primary mt-2"
+                        style="font-family: 'Lexend Deca', sans-serif; font-weight: 700;"
+                        onclick="generatePlayerID()">Generate Player
+                        ID</button>
                 </div>
-                <button type="submit" class="btn btn-success w-100" style="font-family: 'Lexend Deca', sans-serif; font-weight: 700;">SIGN UP</button>
+
+                <button type="submit" class="btn btn-success w-100"
+                    style="font-family: 'Lexend Deca', sans-serif; font-weight: 700;">SIGN UP</button>
+
             </form>
         </div>
     </div>
@@ -66,7 +77,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="../page1/assets/js/scripts.js"></script>
+    <script src="../../assets/js/auth.js"></script>
 </body>
 
 </html>
