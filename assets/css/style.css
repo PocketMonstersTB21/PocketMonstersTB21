@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap');
 
 * {
     transition: 1s ease-in-out;
@@ -33,12 +33,12 @@ nav {
     .nav-link:hover {
         color: #ffc107 !important;
     }
-}
 
-.nav-profile-img {
-    width: 40px; 
-    height: 40px; 
-    border-radius: 50%;
+    .nav-profile-img {
+        width: 40px; 
+        height: 40px; 
+        border-radius: 50%;
+    }
 }
 
 
@@ -87,12 +87,12 @@ nav {
 }
 
 #staticPart {
-    height: 80dvh;
+    height: 700px;
 }
 
 /* FOOTER  */
 .footer {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     background: linear-gradient(to right, #4e808d, #3a5f68);
     color: #fff;
     font-size: 14px;
@@ -192,8 +192,11 @@ nav {
     height: 750px;
     overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+
     background-image: url("../../pages/page1/assets/img/mainbg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -205,16 +208,52 @@ nav {
         background-color: #2e61ac;
         width: 55%;
         min-width: 300px;
-        display: flex;
+        /* display: flex; */
         /* justify-content: center; */
         /* align-items: center; */
     }
 
+    .featuredLabelOutside {
+        display: none;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        width: 100%;
+        height: 10px;
+
+        /* padding: 0; */
+        /* margin: 0; */
+        /* border: solid; */
+        /* height: 20%; */
+        img {
+            /* margin: 0 auto; */
+            /* display: flex; */
+            width: 350px;
+            /* position: relative; */
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .featuredLabel {
+        position: relative;
+        z-index: 1;
+        /* border: solid; */
+        left: 55px;
+        top: -395px;
+
+        img {
+            width: 200px;
+        }
+    }
+
     #charmander {
         position: relative;
-        bottom: -170px;
+        bottom: -60px;
         width: 200px;
-        right: 120px;
+        right: 100px;
         z-index: 1;
 
     }
@@ -223,8 +262,8 @@ nav {
         position: relative;
         width: 300px;
         z-index: 1;
-        bottom: -80px;
-        left: -20px;
+        bottom: 150px;
+        left: -30px;
     }
 
     .featuredCarouselContainer {
@@ -253,7 +292,9 @@ nav {
 
     .left,
     .right {
+        /* border: solid; */
         width: 20px;
+        height: 10px;
     }
 
 
@@ -269,21 +310,20 @@ nav {
     align-items: center;
     padding: 10px 0;
     background-image: url("../img/itemboxesbg.jpeg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     overflow: hidden;
     flex-direction: column;
 
-    .itemBoxesLabel{
+    .itemBoxesLabel {
         position: relative;
         top: 40px;
         z-index: 2;
         /* left: -110px; */
-        
+
     }
 
-    .itemBoxesLabel img{
-        width: 220px;
-        filter: drop-shadow(2px 2px 0px rgb(83, 83, 83));
+    .itemBoxesLabel img {
+        width: 260px;
     }
 
     .itemContainer {
@@ -397,6 +437,348 @@ nav {
     }
 }
 
+#pokecoinsSection {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 40px 30px;
+    padding-top: 250px;
+    flex-wrap: wrap;
+
+    background-image: url("../img/itemboxesbg.jpeg");
+    /* background-repeat: no-repeat; */
+
+    .pokecoinsLabel img {
+        width: 300px;
+        /* flex-grow: 1; */
+        margin: 20px 30px;
+        margin-bottom: 40px;
+        display: none;
+    }
+
+    .cards-container {
+        /* border: solid; */
+        min-width: 300px;
+        width: 1200px;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .card {
+        border-radius: 20px;
+        height: 375px;
+        width: 300px;
+        /* padding: 15px; */
+        /* border: solid rgb(114, 114, 114) 0.5px; */
+        overflow: hidden;
+        filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.158));
+    }
+
+    .card-content {
+        /* border: solid; */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .card-desc {
+        /* border: solid; */
+        height: 40%;
+        margin: 0 20px;
+
+        h1 {
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            color: #515954;
+        }
+
+        h2 {
+            font-size: 0.9rem;
+            padding: 0;
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+
+    .card-img {
+        /* border: solid; */
+        height: 170px;
+        border-radius: 0px;
+        background-image: url("../img/cardimgbg.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .coins {
+            /* border: solid; */
+            height: 130px;
+            z-index: 1;
+        }
+
+        .coins-glare {
+            /* border: solid; */
+            position: fixed;
+            /* right: -20%; */
+            height: 160px;
+            animation-name: coinglare;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            transform: scale(1.5);
+        }
+    }
+
+    .card-button {
+        /* border: solid; */
+        border-radius: 40px;
+        width: 130px;
+        padding: 10px;
+        margin: 0 25px;
+        background-image: linear-gradient(to right, #f8ee00, #ff8a00);
+        margin-bottom: 20px;
+        font-family: "Tektur", sans-serif;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+    }
+
+    .card-button:hover {
+        background-image: linear-gradient(to right, #d3cc00, #ce6e00);
+        cursor: pointer;
+    }
+
+}
+
+/* Daily Bundles */
+
+#dailybundlesSection {
+    /* border: solid; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 40px 30px;
+    padding-top: 250px;
+    flex-wrap: wrap;
+    transition: 1s;
+
+    background-image: url("../img/itemboxesbg.jpeg");
+    /* background-repeat: no-repeat; */
+
+    padding-bottom: 200px;
+    .dailybundleslabel img {
+        width: 300px;
+        /* flex-grow: 1; */
+        margin: 20px 30px;
+        margin-bottom: 40px;
+        display: none;
+    }
+
+    .cards-container {
+        /* border: solid; */
+        min-width: 300px;
+        width: 1200px;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .card {
+        border-radius: 20px;
+        height: 400px;
+        width: 275px;
+        /* padding: 15px; */
+        /* border: solid rgb(114, 114, 114) 0.5px; */
+        background-image: url("../img/dailybundlesboxes/dbcardbg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.158));
+    }
+
+    .card-content {
+        /* border: solid; */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        padding-left: 15px;
+        font-family: "Tektur", sans-serif;
+        color: #ffffff;
+    }
+
+    .text-box {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        /* justify-content: space-around; */
+    }
+
+    .card-button {
+        /* border: solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        border-radius: 40px;
+        width: 130px;
+        padding: 5px;
+        margin: 0 15px;
+        background-image: linear-gradient(to right, #ffffff2f, #d1d1d1);
+        margin-bottom: 20px;
+
+        font-family: "Tektur", sans-serif;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        user-select: none;
+    }
+
+    .card-button:hover {
+        background-image: linear-gradient(to right, #929292, #6e6e6e);
+        cursor: pointer;
+    }
+
+    .db-content {
+        width: 100%;
+        height: 250px;
+        border-radius: 15px;
+        background-image: url('../img/db-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                /* border: solid; */
+                /* width: 40%; */
+                animation-name: dbItems;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+                transform-origin: center;
+
+            }
+
+        }
+
+        .bundle-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 175px;
+
+            }
+        }
+    }
+
+}
+
+@keyframes dbItems {
+    0% {
+        transform: translateY(10px);
+        /* rotate: 10deg; */
+    }
+
+    50% {
+        transform: translateY(0px);
+        /* rotate: -20deg; */
+    }
+
+    100% {
+        transform: translateY(10px);
+        /* rotate: 10deg; */
+    }
+}
+
+
+@keyframes coinglare {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1000px) {
     .mini-navbar {
         /* transform: translateY(160px) scale(0.9); */
@@ -404,8 +786,30 @@ nav {
         display: none;
     }
 
+
+
+
     #featuredCarousel {
         padding-top: 0px;
+        /* align-items: center; */
+        height: 100dvh;
+
+        /* overflow: hidden; */
+        .featuredLabel {
+            display: none;
+        }
+
+        .featuredLabelOutside {
+            display: inline;
+
+        }
+
+
+
+    }
+
+    #pokecoinsSection {
+        padding: 40px 30px;
     }
 
     nav .container .logo {
@@ -423,9 +827,20 @@ nav {
     #itemBoxes {
         justify-content: center;
         align-items: center;
+        height: 100dvh;
+
+
 
         .itemContainer {
-            width: 900px;
+            width: 800px;
+        }
+
+        .itemBoxesLabel {
+            padding: 40px;
+
+            img {
+                width: 400px;
+            }
         }
 
         .priceButton {
@@ -439,13 +854,30 @@ nav {
             font-size: 0.7rem;
         }
 
+    }
 
+    #pokecoinsSection {
+        .pokecoinsLabel img {
+            display: block;
+            width: 60dvw;
+            margin: 20px 0px;
+        }
+    }
 
+    #dailybundlesSection {
 
+        padding: 40px 30px;
+
+        .dailybundleslabel img {
+            display: block;
+            width: 60dvw;
+            margin: 20px 0px;
+        }
     }
 
 
 }
+
 
 
 
@@ -459,8 +891,6 @@ nav {
     }
 
     #itemBoxes {
-
-
         .itemContainer {
             width: 600px;
         }
@@ -472,10 +902,20 @@ nav {
             transform: skew(-39deg);
         }
 
+        .itemBoxesLabel {
+            position: sticky;
+            padding: 0px;
+
+            img {
+                width: 350px;
+            }
+        }
+
         p {
             font-size: 0.7rem;
         }
 
+        
 
 
 
@@ -485,7 +925,14 @@ nav {
 
 @media (max-width: 500px) {
 
+    #featuredCarousel {
+        height: 700px;
+    }
+
+
     #itemBoxes {
+        height: 700px;
+
         .itemContainer {
             width: 350px;
         }
@@ -495,6 +942,23 @@ nav {
             right: -50px;
             width: 100px;
             transform: skew(-39deg);
+        }
+    }
+
+    #pokecoinsSection {
+        .pokecoinsLabel img {
+            width: 350px;
+            margin: 0px 0px 50px 0px;
+        }
+    }
+
+    #dailybundlesSection {
+
+        padding-bottom: 120px;
+        
+        .dailybundleslabel img {
+            width: 325px;
+            margin: 20px 0px;
         }
     }
 }
