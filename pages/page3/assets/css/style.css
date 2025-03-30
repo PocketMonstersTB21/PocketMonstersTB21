@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap');
+
+
 /* ===== Page Container ===== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     background-color: white;
     margin: 0;
     padding: 0;
@@ -8,18 +11,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url("../../../../assets/img/itemboxesbg.jpeg");
 }
 
 /* ===== Main Container ===== */
 .container {
-    background-color: #fff;
+    /* background-color: #fff; */
     width: 95%; 
     max-width: 1200px; 
-    padding: 50px 40px;
+    padding: 40px 40px;
     border-radius: 15px;
     box-shadow: none; 
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+
 }
 
 /* ===== Back to Store Link ===== */
