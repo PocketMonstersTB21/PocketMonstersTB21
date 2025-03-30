@@ -24,7 +24,7 @@ body {
 
 /* Hover effect */
 .back-to-store:hover {
-    transform: translateX(-5px); 
+    transform: translateX(-5px);
     color: #e76e4b;
 }
 
@@ -56,7 +56,7 @@ body {
 /* ===== Event Container: Two Columns ===== */
 .event-container {
     display: grid;
-    grid-template-columns: 60% 40%; 
+    grid-template-columns: 60% 40%;
     gap: 40px;
     width: 100%;
     align-items: flex-start;
@@ -66,7 +66,7 @@ body {
 /* ===== Event Grid (Left Column) ===== */
 .event-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
@@ -140,9 +140,9 @@ body {
 
 /* ===== Hover Effect for Featured Image ===== */
 .featured-img:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 8px 20px rgba(231, 110, 75, 0.5); 
-    border-color: #ff5733; 
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(231, 110, 75, 0.5);
+    border-color: #ff5733;
 }
 
 /* ===== Button and Link Section ===== */
@@ -184,4 +184,67 @@ body {
 
 .event-details-link:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .event-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .event-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center; 
+        justify-content: center;
+        width: 100%;
+    }
+
+  
+    .event-card {
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto; 
+    }
+
+    .featured-container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .featured-img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-card {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto; 
+    }
+
+    .event-img-container {
+        height: 150px; 
+    }
+
+    .main-event-title {
+        font-size: 30px;
+    }
+
+    .get-tickets {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .event-details-link {
+        font-size: 14px;
+    }
 }
