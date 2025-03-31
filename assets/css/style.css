@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f8f9fa;
+    background-image: url("../img/itemboxesbg.jpeg");
 }
 
 nav {
@@ -48,7 +48,113 @@ nav {
     }
 }
 
-/* Comment sample */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999; /* Behind the pop-up */
+    display: none; /* Initially hidden */
+}
+
+.pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    height: 475px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: 0.5s;
+
+
+    .bi {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        font-size: 1.5rem;
+        border: solid 0.5px;
+        padding: 0;
+        margin: 0;
+        border-radius: 30px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .bi-x::before{
+        vertical-align:0;
+
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    .item-img img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .content-items {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        height: 100%;
+        padding: 10px;
+        padding-top: 10px;
+        gap: 8px;
+    }
+
+    .button{
+        z-index: 1000;
+        padding: 5px 20px;
+        /* border: solid; */
+        width: auto;
+        background-image: linear-gradient(to right, #71CCA6, #1AC5BE );
+        color: white;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .button:hover{
+        background-image: linear-gradient(to right, #5aa485, #0f928e );
+
+    }
+
+
+    * {
+        /* border: solid 0.1px; */
+        margin: 0;
+
+    }
+
+    img {
+        width: 150px;
+    }
+}
 
 .landing-section {
     position: relative;
@@ -952,13 +1058,13 @@ nav {
 
 @media screen and (max-width: 768px) {
     .landing-section {
-        height: 60vh; 
+        height: 60vh;
     }
 
     .landing-video {
         width: 100%;
         height: 100%;
-        object-fit: cover; 
+        object-fit: cover;
     }
 
     .slide-content {

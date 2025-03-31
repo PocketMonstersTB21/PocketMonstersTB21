@@ -20,7 +20,7 @@
             <!-- Logo and Web Store Text -->
             <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
                 <img src="assets/img/pokemongo.png" alt="Pokémon GO" class="logo me-2">
-                <span class="store-name">Web Store</span>
+                <span class="store-name">WEB STORE</span>
             </a>
 
             <!-- Toggler -->
@@ -65,6 +65,7 @@
         </div>
 
     </nav>
+
 
 
     <!-- Landing Page Video Section -->
@@ -206,7 +207,7 @@
                         <div class="card swiper-slide">
                             <img src="assets/img/cards/4.png" alt="">
                             <div class="boton">
-                                <button class="priceButton">
+                                <button class="priceButton" onclick="showCard('ultraBox')">
                                     <p>Php 150.00</p>
                                 </button>
                             </div>
@@ -263,6 +264,71 @@
 
         </div>
     </section>
+
+        <!-- POP UP CARD 1 -->
+        <div class="pop-up" id = 'ultraBox'>
+            <div class="bi bi-x" style="cursor: pointer;" onclick="closeCard('ultraBox')"></div>
+            <div class="col d-flex justify-content-center align-items-center m-2">
+                <img src="assets/img/dailybundlesboxes/db6.png" alt="">
+            </div>
+            <div class="col">
+                <h6 style="font-weight: bold;">Ultra Community Day Box</h6>
+            </div>
+            <div class="row content-items">
+                <!-- SUBITEM 1 -->
+                <div class="row">
+                    <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                        <img src="assets/img/items/29.png" alt="">
+                        <h6 style="font-size: 0.8rem;">x1</h6>
+                    </div>
+                    <div class="col-8 d-flex flex-column justify-content-center">
+                        <h6 style="font-size: 0.9rem;">Ticket</h6>
+                        <h6 style="font-size: 0.9rem;"><a href="pages/page4/event.html" style="text-decoration: none; color: #2E8F9F;">View Event Details</a></h6>
+                    </div>
+                </div>
+                <!-- SUBITEM 1 -->
+                <div class="row">
+                    <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                        <img src="assets/img/items/31.png" alt="">
+                        <h6 style="font-size: 0.8rem;">x1</h6>
+                    </div>
+                    <div class="col-8 d-flex flex-column justify-content-center">
+                        <h6 style="font-size: 0.9rem;">Elite Charged TM</h6>
+                    </div>
+                </div>
+                <!-- SUBITEM 1 -->
+                <div class="row">
+                    <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                        <img src="assets/img/items/30.png" alt="">
+                        <h6 style="font-size: 0.8rem;">x10</h6>
+                    </div>
+                    <div class="col-8 d-flex flex-column justify-content-center">
+                        <h6 style="font-size: 0.9rem;">Ultra Ball</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="button">
+                    ₱ 150.00
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
     <!-- PokeCoins -->
 

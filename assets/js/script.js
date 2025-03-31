@@ -125,3 +125,44 @@ var swiper = new Swiper(".slide-content", {
         }
     });
 });
+
+// CARD FUNCTION
+// Create a global overlay element
+let overlay = document.createElement('div');
+overlay.id = 'overlay';
+document.body.appendChild(overlay);
+
+function showCard(card) {
+    let item = document.getElementById(card);
+    let overlay = document.getElementById('overlay');
+
+    // Show pop-up
+    item.style.display = 'flex'; // Ensure it's visible before animation
+    setTimeout(() => {
+        item.style.transform = 'translate(-50%, -50%)';
+        item.style.opacity = '1';
+    }, 10);
+
+    // Show overlay (dark background)
+    overlay.style.display = 'block';
+    setTimeout(() => {
+        overlay.style.opacity = '0.5'; // Darker effect
+    }, 10);
+}
+
+function closeCard(card) {
+    let item = document.getElementById(card);
+    let overlay = document.getElementById('overlay');
+
+    // Hide pop-up
+    item.style.transform = 'translate(-50%, 100%)';
+    item.style.opacity = '0';
+
+    // Hide overlay
+    overlay.style.opacity = '0';
+    
+    setTimeout(() => {
+        item.style.display = 'none'; // Hide pop-up completely
+        overlay.style.display = 'none'; // Hide overlay
+    }, 300); // Matches transition duration
+}
