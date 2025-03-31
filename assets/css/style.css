@@ -1059,11 +1059,13 @@ nav {
 @media screen and (max-width: 768px) {
     .landing-section {
         height: 60vh;
+        height: 60vh;
     }
 
     .landing-video {
         width: 100%;
         height: 100%;
+        object-fit: cover;
         object-fit: cover;
     }
 
