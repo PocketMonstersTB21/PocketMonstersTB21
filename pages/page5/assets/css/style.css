@@ -1,4 +1,4 @@
-/* ===== Global Styles ===== */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fdfcf8;
@@ -10,7 +10,7 @@ body {
     height: 100vh;
 }
 
-/* ===== Back to Store Button ===== */
+
 .back-to-store {
     position: absolute;
     top: 20px;
@@ -24,7 +24,7 @@ body {
     transition: color 0.3s ease;
 }
 
-/* Hover effect */
+
 .back-to-store:hover {
     transform: translateX(-5px); 
     color: #e76e4b;
@@ -35,12 +35,12 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Icon hover effect */
+
 .back-to-store:hover i {
     transform: rotate(-45deg);
 }
 
-/* ===== Main Container ===== */
+
 .container {
     background-color: rgba(255, 255, 255, 0.95);
     width: 90%;
@@ -51,12 +51,12 @@ body {
     text-align: center;
 }
 
-/* ===== Payment Box ===== */
+
 .payment-box {
     width: 100%;
 }
 
-/* Title */
+
 .title {
     font-size: 50px;
     font-weight: bold;
@@ -64,7 +64,7 @@ body {
     color: #749cab;
 }
 
-/* Sub Title */
+
 .sub-title {
     font-size: 16px;
     font-weight: bold;
@@ -73,7 +73,7 @@ body {
     text-align: left;
 }
 
-/* ===== Payment Methods ===== */
+
 .payment-methods {
     display: flex;
     justify-content: center;
@@ -81,7 +81,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* ===== Payment Options ===== */
+
 .payment-options {
     display: flex;
     justify-content: center;
@@ -89,7 +89,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Payment Button Styles */
+
 .payment-btn {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -111,14 +111,14 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Selected Payment Style */
+
 .payment-btn.selected {
     border-color: #4CAF50;
     background-color: #e8f5e9;
     box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
 }
 
-/* Button styling */
+
 .confirm-btn {
     background-color: #4CAF50;
     color: white;
@@ -135,7 +135,7 @@ body {
 
 
 
-/* ===== Form Section ===== */
+
 .payment-form {
     margin-top: 20px;
     text-align: left;
@@ -145,14 +145,13 @@ body {
     margin-bottom: 15px;
 }
 
-/* Label */
+
 label {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
 }
 
-/* Input Fields */
 .form-control {
     width: 100%;
     padding: 10px;
@@ -160,25 +159,25 @@ label {
     border-radius: 8px;
 }
 
-/* Form Row */
+
 .form-row {
     display: flex;
     gap: 15px;
 }
 
-/* Form Columns */
+
 .col {
     width: 50%;
 }
 
-/* ===== Button Section ===== */
+
 .form-actions {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-/* Back to Cart Button */
+
 .back-btn {
     text-decoration: none;
     color: #333;
@@ -190,7 +189,7 @@ label {
     color: #e76e4b;
 }
 
-/* Confirm Button */
+
 .confirm-btn {
     background-color: #0ea498;
     color: #fff;
@@ -207,7 +206,7 @@ label {
 }
 
 
-/* ===== Media Query for Responsiveness ===== */
+
 @media (max-width: 768px) {
     .form-row {
         flex-direction: column;
@@ -238,19 +237,19 @@ label {
         justify-content: center;
     }
 
-    /* Increase Button Size */
+
     .payment-btn {
         width: 100%;
         max-width: 160px;
         padding: 10px;
     }
 
-    /* Larger Images for Mobile */
+
     .payment-btn img {
         width: 70px;
     }
 
-    /* Button adjustments */
+
     .form-actions {
         flex-direction: column;
         gap: 12px;
@@ -270,7 +269,7 @@ label {
 }
 
 
-/* ===== Extra Small Screens (up to 480px) ===== */
+
 @media (max-width: 480px) {
     .container {
         width: 100%;
@@ -290,7 +289,6 @@ label {
         justify-content: center;
     }
 
-    /* Centered Larger Payment Buttons */
     .payment-btn {
         width: 100%;
         max-width: 160px;
@@ -298,10 +296,9 @@ label {
 
     .payment-btn img {
         width: 75px;
-        margin: 0 auto; /* Center images */
+        margin: 0 auto;
     }
 
-    /* Smaller Button Text */
     .confirm-btn {
         font-size: 12px;
         padding: 10px;
