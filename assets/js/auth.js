@@ -46,7 +46,7 @@ function handleLogin() {
                 updateProfile(); // Update profile UI
 
                 // Redirect to landing page
-                window.location.href = "../../../index.html";
+                window.location.href = "/PocketMonstersTB21/index.html";
             } else {
                 alert("Invalid credentials! Please try again.");
             }
