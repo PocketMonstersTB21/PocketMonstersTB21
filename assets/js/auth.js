@@ -46,7 +46,7 @@ function handleLogin() {
                 updateProfile(); // Update profile UI
 
                 // Redirect to landing page
-                window.location.href = "../../../index.html";
+                window.location.href = "/PocketMonstersTB21/index.html";
             } else {
                 alert("Invalid credentials! Please try again.");
             }
@@ -118,7 +118,7 @@ function handleSignup() {
             localStorage.setItem("playerID", playerID);
 
             alert("Signup successful! Please check your email for verification.");
-            window.location.href = "../../../index.html"; // Redirect to landing page
+            window.location.href = "/PocketMonstersTB21/index.html"; // Redirect to landing page
         });
     }
 }

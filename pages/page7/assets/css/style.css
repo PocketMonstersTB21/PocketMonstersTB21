@@ -216,3 +216,69 @@ h1 {
         margin-top: 15px; 
     }
 }
+
+@media (max-width: 480px) {
+    .shopping-container {
+        width: 100%; 
+        padding: 20px; 
+    }
+
+    .cart-box {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .cart-box img {
+        width: 70px; 
+        height: 70px; 
+        margin-bottom: 6px;
+    }
+
+    .cart-title {
+        font-size: 20px; 
+    }
+
+    .item-details {
+        align-items: center;
+        text-align: center;
+    }
+
+    .quantity {
+        justify-content: center;
+    }
+
+    .quantity button {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+
+    .quantity input {
+        width: 28px;
+        height: 22px;
+        font-size: 12px;
+    }
+
+    .store-link {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .price {
+        margin-top: 8px;
+        font-size: 16px;
+    }
+
+    .checkout-btn {
+        font-size: 12px;
+        width: 160px;
+        padding: 12px;
+    }
+
+    .checkout-container {
+        padding: 10px 0;
+    }
+}
