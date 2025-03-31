@@ -12,84 +12,128 @@
 </head>
 
 <body>
-
     <a href="../../index.html" class="back-to-store">
         <i class="bi bi-arrow-left-circle"></i> Back to Store
     </a>
 
-    <!-- Main Container -->
+
     <div class="container">
-        <div class="payment-box">
-            <h2 class="title">Payment</h2>
+        <div class="payment-layout">
+  
+            <div class="payment-box">
+                <h2 class="title">Payment</h2>
 
-            <!-- Select Payment Method -->
-            <p class="sub-title">Select payment method</p>
-            <div class="payment-options">
-                <label class="payment-btn" onclick="selectPayment('Visa')">
-                    <input type="radio" name="payment" value="Visa" hidden>
-                    <img src="assets/img/visa.png" alt="Visa"> 
-                </label>
-                <label class="payment-btn" onclick="selectPayment('PayPal')">
-                    <input type="radio" name="payment" value="PayPal" hidden>
-                    <img src="assets/img/paypal.png" alt="PayPal">
-                </label>
-                <label class="payment-btn" onclick="selectPayment('GCash')">
-                    <input type="radio" name="payment" value="GCash" hidden>
-                    <img src="assets/img/gcash.png" alt="GCash">
-                </label>
+
+                <p class="sub-title">Select payment method</p>
+                <div class="payment-options">
+                    <label class="payment-btn" onclick="selectPayment('Visa')">
+                        <input type="radio" name="payment" value="Visa" hidden>
+                        <img src="assets/img/visa.png" alt="Visa">
+                    </label>
+                    <label class="payment-btn" onclick="selectPayment('PayPal')">
+                        <input type="radio" name="payment" value="PayPal" hidden>
+                        <img src="assets/img/paypal.png" alt="PayPal">
+                    </label>
+                    <label class="payment-btn" onclick="selectPayment('GCash')">
+                        <input type="radio" name="payment" value="GCash" hidden>
+                        <img src="assets/img/gcash.png" alt="GCash">
+                    </label>
+                </div>
+
+                <form id="cardForm" class="payment-form">
+                    <div class="form-group">
+                        <label for="cardName">Card holder name</label>
+                        <input type="text" id="cardName" class="form-control" placeholder="eg. Ash Ketchum">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardNumber">Card number</label>
+                        <input type="text" id="cardNumber" class="form-control" placeholder="xxxx xxxx xxxx xxxx"
+                            maxlength="16">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="expDate">Exp date</label>
+                            <input type="text" id="expDate" class="form-control" placeholder="MM/YYYY">
+                        </div>
+                        <div class="form-group col">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" class="form-control" placeholder="eg. 123" maxlength="3">
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="../page8/cart.html" class="back-btn">← Back to Cart</a>
+                        <button type="button" id="confirmCardPayment" class="confirm-btn">Confirm Payment</button>
+                    </div>
+                </form>
+
+
+
+                <form id="gcashForm" class="payment-form gcash-form">
+                    <div class="gcash-logo">
+                        <img src="assets/img/gcash.png" alt="GCash">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gcashName">Full Name</label>
+                        <input type="text" id="gcashName" class="form-control" placeholder="eg. Ash Ketchum">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gcashNumber">Mobile Number</label>
+                        <input type="tel" id="gcashNumber" class="form-control" placeholder="09xx xxx xxxx"
+                            maxlength="11">
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="../page8/cart.html" class="back-btn">← Back to Cart</a>
+                        <button type="button" class="confirm-btn" onclick="sendOTP()">Send OTP</button>
+                    </div>
+                </form>
+
+
+                <div id="otpContainer" class="otp-container">
+                    <div class="form-group">
+                        <label>Enter 6-digit OTP sent to your mobile</label>
+                        <div class="otp-inputs">
+                            <input type="text" maxlength="1" class="otp-digit" oninput="moveToNext(this, 1)">
+                            <input type="text" maxlength="1" class="otp-digit" oninput="moveToNext(this, 2)">
+                            <input type="text" maxlength="1" class="otp-digit" oninput="moveToNext(this, 3)">
+                            <input type="text" maxlength="1" class="otp-digit" oninput="moveToNext(this, 4)">
+                            <input type="text" maxlength="1" class="otp-digit" oninput="moveToNext(this, 5)">
+                            <input type="text" maxlength="1" class="otp-digit" oninput="moveToNext(this, 6)">
+                        </div>
+                        <div class="resend-otp">
+                            Didn't receive OTP? <a href="#" onclick="resendOTP()">Resend</a>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="back-btn" onclick="backToGCashForm()">← Back</button>
+                        <button type="button" id="confirmOtpPayment" class="confirm-btn">Verify OTP</button>
+                    </div>
+                </div>
             </div>
 
-            <!-- Card Info Section -->
-            <form id="paymentForm" class="payment-form" onsubmit="validateForm(event)">
-                <div class="form-group">
-                    <label for="cardName">Card holder name</label>
-                    <input type="text" id="cardName" class="form-control" placeholder="eg. Ash Ketchum">
-                </div>
-
-                <div class="form-group">
-                    <label for="cardNumber">Card number</label>
-                    <input type="text" id="cardNumber" class="form-control" placeholder="xxxx xxxx xxxx xxxx"
-                        maxlength="16">
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col">
-                        <label for="expDate">Exp date</label>
-                        <input type="text" id="expDate" class="form-control" placeholder="MM/YYYY">
+            <div class="summary-container">
+                <h2 class="summary-title">ORDER SUMMARY</h2>
+                <div class="summary-content">
+                    <div class="items-list">
+                        <h4>Items in Cart:</h4>
+                        <div id="summary-items">
+                            <p class="empty-message">Loading your items...</p>
+                        </div>
                     </div>
-                    <div class="form-group col">
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" class="form-control" placeholder="eg. 123" maxlength="3">
+                    <div class="total-section">
+                        <h4>Total Amount:</h4>
+                        <div class="total-amount">₱ <span id="total-price">0.00</span></div>
                     </div>
-                </div>
-
-                <!-- Buttons -->
-                <div class="form-actions">
-                    <a href="../page8/cart.html" class="back-btn">← Back to Store</a>
-                    <button type="submit" class="confirm-btn">Confirm</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Bootstrap Modal for Notifications -->
-    <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="notificationModalLabel">Notification</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="modalMessage">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
