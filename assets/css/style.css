@@ -284,13 +284,35 @@ nav {
 
 }
 
+#adSection{
+
+    padding: 70px;
+}
+
 /* FOOTER  */
 .footer {
     /* margin-top: 50px; */
-    background: linear-gradient(to right, #4e808d, #3a5f68);
+    background-image: url('../img/footerbg.png');
+    background-position: center;
+    background-size: cover;
     color: #fff;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+
+    .container-footer{
+        background-color: rgba(0, 0, 0, 0.375);
+        width: 100%;
+        padding: 40px 70px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        border-radius: 50px 50px 0px 0px;
+    }
+
+
 }
+
 
 .footer-title {
     font-size: 16px;

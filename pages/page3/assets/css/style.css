@@ -214,9 +214,11 @@ h1 {
 /* FOOTER  */
 .footer {
     /* margin-top: 50px; */
-    background: linear-gradient(to right, #4e808d, #3a5f68);
+    background-image: linear-gradient(to right, rgb(161, 13, 13) , rgb(151, 99, 99));
     color: #fff;
     font-size: 14px;
+    border-radius: 50px 50px 0px 0px;
+
 }
 
 .footer-title {
