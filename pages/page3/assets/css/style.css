@@ -1,31 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tektur:wght@400..900&display=swap');
 
-
-/* ===== Page Container ===== */
-body {
-    font-family: "Lexend Deca", sans-serif;
-    background-color: white;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url("../../../../assets/img/itemboxesbg.jpeg");
 }
 
-/* ===== Main Container ===== */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: white;
+    background-image: url("../../../../assets/img/itemboxesbg.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
 .container {
-    /* background-color: #fff; */
-    width: 95%; 
-    max-width: 1200px; 
+    flex-grow: 1;
+    width: 95%;
+    max-width: 1200px;
     padding: 40px 40px;
     border-radius: 15px;
-    box-shadow: none; 
-    text-align: center;
-    /* margin-top: 20px; */
+    margin-top: 20px;
+    flex-direction: column;
 
 }
+
 
 /* ===== Back to Store Link ===== */
 .back-to-store {
@@ -191,7 +193,7 @@ h1 {
 
 
 /* ===== Footer Text ===== */
-.footer-text {
+.note-text {
     font-size: 17px;
     color: #666;
     margin-top: 40px;
@@ -199,13 +201,76 @@ h1 {
     text-align: center; 
 }
 
-.footer-text a {
+.note-text a {
     color: #e76e4b;
     text-decoration: none;
 }
 
-.footer-text a:hover {
+.note-text a:hover {
     text-decoration: underline;
+}
+
+
+/* FOOTER  */
+.footer {
+    /* margin-top: 50px; */
+    background: linear-gradient(to right, #4e808d, #3a5f68);
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #ffc107;
+}
+
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+
+.footer-logo {
+    width: 120px;
+    margin-top: 10px;
+}
+
+
+.language-dropdown .btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ccc;
+}
+
+
+.footer-link {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.divider {
+    color: #fff;
+    margin: 0 5px;
 }
 
 /* Responsiveness */
