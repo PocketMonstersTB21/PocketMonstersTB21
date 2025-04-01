@@ -101,7 +101,7 @@ function handleSignup() {
             event.preventDefault(); // Prevent default form submission
 
             const email = document.getElementById("signupEmail").value;
-            const password = document.getElementById("loginPassword").value;
+            const password = document.getElementById("signupPassword").value;
             const reEnterPassword = document.getElementById("re-enterPassword").value;
             const ign = document.getElementById("ign").value;
             const playerID = document.getElementById("playerID").textContent;
