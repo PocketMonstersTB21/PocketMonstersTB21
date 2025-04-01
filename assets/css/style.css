@@ -528,11 +528,29 @@ nav {
     overflow: hidden;
     flex-direction: column;
 
+    .itemBoxesLabelFull {
+        position: relative;
+        height: 0px;
+        width: 300px;
+        position: relative;
+        right: 315px;
+        /* border: solid; */
+        bottom: -10px;
+        z-index: 3;
+        /* border: solid; */
+
+        img{
+            width: 100%;
+        }
+
+    }
+
     .itemBoxesLabel {
         position: relative;
         top: 40px;
         z-index: 2;
         /* left: -110px; */
+        display: none;
 
     }
 
@@ -655,13 +673,30 @@ nav {
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     padding: 40px 30px;
     padding-top: 250px;
-    flex-wrap: wrap;
-
+    flex-direction: column;
     background-image: url("../img/itemboxesbg.jpeg");
+
+    *{
+        /* border: solid; */
+    }
     /* background-repeat: no-repeat; */
+
+    .pokecoinsLabelFull{
+        height: 0px;
+        width: 300px;
+        position: relative;
+        right: 375px;
+        /* border: solid; */
+        bottom: 35px;
+        z-index: 3;
+
+        img{
+            width: 100%;
+        }
+    }
 
     .pokecoinsLabel img {
         width: 300px;
@@ -793,6 +828,20 @@ nav {
     /* background-repeat: no-repeat; */
 
     padding-bottom: 200px;
+
+    .dailybundleslabelFull{
+        height: 0px;
+        width: 300px;
+        position: relative;
+        right: 325px;
+        /* border: solid; */
+        bottom: 25px;
+        z-index: 3;
+
+        img{
+            width: 100%;
+        }
+    }
 
     .dailybundleslabel img {
         width: 300px;
@@ -1049,11 +1098,16 @@ nav {
             width: 800px;
         }
 
+        .itemBoxesLabelFull{
+            display: none;
+        }
+
         .itemBoxesLabel {
             padding: 40px;
+            display: block;
 
             img {
-                width: 400px;
+                width: 500px;
             }
         }
 
@@ -1071,6 +1125,10 @@ nav {
     }
 
     #pokecoinsSection {
+        .pokecoinsLabelFull{
+            display: none;
+        }
+
         .pokecoinsLabel img {
             display: block;
             width: 60dvw;
@@ -1081,6 +1139,10 @@ nav {
     #dailybundlesSection {
 
         padding: 40px 30px;
+
+        .dailybundleslabelFull{
+            display:none;
+        }
 
         .dailybundleslabel img {
             display: block;
