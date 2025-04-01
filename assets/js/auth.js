@@ -35,9 +35,10 @@ function handleLogin() {
             const email = document.getElementById("loginEmail").value;
             const password = document.getElementById("loginPassword").value;
             const ign = document.getElementById("ign").value;
+            const playerid = document.getElementById("playerID").value;
 
             // Example authentication (Replace with actual backend validation)
-            if (email === "user@pokemongo.com" && password === "pocketmonsters123") {
+            if (email === "user@pokemongo.com" && password === "pocketmonsters123" && ign === "pm123" && playerid === "1111 2222 3333 4444") {
                 localStorage.setItem("loggedIn", "true");
                 localStorage.setItem("loginEmail", email);
                 localStorage.setItem("signupPassword", password);
