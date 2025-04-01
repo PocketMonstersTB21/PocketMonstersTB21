@@ -61,6 +61,8 @@ nav {
     display: none; /* Initially hidden */
 }
 
+
+
 .pop-up {
     position: fixed;
     top: 50%;
@@ -78,15 +80,13 @@ nav {
     background-color: white;
     border-radius: 10px;
     padding: 25px;
-    display: flex;
     flex-direction: column;
     font-family: "Lexend Deca", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     transition: 0.5s;
 
-
-    .bi {
+    .close-btn {
         width: 30px;
         height: 30px;
         text-align: center;
@@ -100,9 +100,21 @@ nav {
         right: 15px;
     }
 
-    .bi-x::before{
+    .close-btn::before{
         vertical-align:0;
 
+    }
+
+    .add-to-cart{
+        width: auto;
+        border-radius: 30px;
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+
+    .add-to-cart:hover{
+        cursor: pointer;
+        transform: scale(1.2);
     }
 
     h6 {

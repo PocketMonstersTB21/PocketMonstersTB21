@@ -166,3 +166,4 @@ function closeCard(card) {
         overlay.style.display = 'none'; // Hide overlay
     }, 300); // Matches transition duration
 }
+

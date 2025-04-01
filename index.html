@@ -177,7 +177,7 @@
                         <div class="card swiper-slide">
                             <img src="assets/img/cards/1.png" alt="">
                             <div class="boton">
-                                <button class="priceButton">
+                                <button class="priceButton" onclick="showCard('ultraRaidBox')">
                                     <p>Php 150.00</p>
                                 </button>
                             </div>
@@ -187,7 +187,7 @@
                         <div class="card swiper-slide">
                             <img src="assets/img/cards/2.png" alt="">
                             <div class="boton">
-                                <button class="priceButton">
+                                <button class="priceButton" onclick="showCard('ultraHatchBox')">
                                     <p>Php 150.00</p>
                                 </button>
                             </div>
@@ -197,7 +197,7 @@
                         <div class="card swiper-slide">
                             <img src="assets/img/cards/3.png" alt="">
                             <div class="boton">
-                                <button class="priceButton">
+                                <button class="priceButton" onclick="showCard('mightBox')">
                                     <p>Php 150.00</p>
                                 </button>
                             </div>
@@ -217,7 +217,7 @@
                         <div class="card swiper-slide">
                             <img src="assets/img/cards/5.png" alt="">
                             <div class="boton">
-                                <button class="priceButton">
+                                <button class="priceButton" onclick="showCard('deepBox')">
                                     <p>Php 150.00</p>
                                 </button>
                             </div>
@@ -227,33 +227,11 @@
                         <div class="card swiper-slide">
                             <img src="assets/img/cards/6.png" alt="">
                             <div class="boton">
-                                <button class="priceButton">
+                                <button class="priceButton" onclick="showCard('megaBox')">
                                     <p>Php 150.00</p>
                                 </button>
                             </div>
                         </div>
-
-                        <!-- CARD 7 -->
-                        <div class="card swiper-slide">
-                            <img src="assets/img/cards/7.png" alt="">
-                            <div class="boton">
-                                <button class="priceButton">
-                                    <p>Php 150.00</p>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- CARD 8 -->
-                        <div class="card swiper-slide">
-                            <img src="assets/img/cards/8.png" alt="">
-                            <div class="boton">
-                                <button class="priceButton">
-                                    <p>Php 150.00</p>
-                                </button>
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
 
@@ -265,70 +243,309 @@
         </div>
     </section>
 
-        <!-- POP UP CARD 1 -->
-        <div class="pop-up" id = 'ultraBox'>
-            <div class="bi bi-x" style="cursor: pointer;" onclick="closeCard('ultraBox')"></div>
-            <div class="col d-flex justify-content-center align-items-center m-2">
-                <img src="assets/img/dailybundlesboxes/db6.png" alt="">
-            </div>
-            <div class="col">
-                <h6 style="font-weight: bold;">Ultra Community Day Box</h6>
-            </div>
-            <div class="row content-items">
-                <!-- SUBITEM 1 -->
-                <div class="row">
-                    <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
-                        <img src="assets/img/items/29.png" alt="">
-                        <h6 style="font-size: 0.8rem;">x1</h6>
-                    </div>
-                    <div class="col-8 d-flex flex-column justify-content-center">
-                        <h6 style="font-size: 0.9rem;">Ticket</h6>
-                        <h6 style="font-size: 0.9rem;"><a href="pages/page4/event.html" style="text-decoration: none; color: #2E8F9F;">View Event Details</a></h6>
-                    </div>
+    <!-- POP UP CARD 1 -->
+    <div class="pop-up" id='ultraBox'>
+        <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('ultraBox')"></div>
+        <div class="col d-flex justify-content-center align-items-center m-2">
+            <img src="assets/img/dailybundlesboxes/db6.png" alt="">
+        </div>
+        <div class="col">
+            <h6 style="font-weight: bold;">Ultra Community Day Box</h6>
+        </div>
+        <div class="row content-items">
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/29.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x1</h6>
                 </div>
-                <!-- SUBITEM 1 -->
-                <div class="row">
-                    <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
-                        <img src="assets/img/items/31.png" alt="">
-                        <h6 style="font-size: 0.8rem;">x1</h6>
-                    </div>
-                    <div class="col-8 d-flex flex-column justify-content-center">
-                        <h6 style="font-size: 0.9rem;">Elite Charged TM</h6>
-                    </div>
-                </div>
-                <!-- SUBITEM 1 -->
-                <div class="row">
-                    <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
-                        <img src="assets/img/items/30.png" alt="">
-                        <h6 style="font-size: 0.8rem;">x10</h6>
-                    </div>
-                    <div class="col-8 d-flex flex-column justify-content-center">
-                        <h6 style="font-size: 0.9rem;">Ultra Ball</h6>
-                    </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Ticket</h6>
+                    <h6 style="font-size: 0.9rem;"><a href="pages/page4/event.html"
+                            style="text-decoration: none; color: #2E8F9F;">View Event Details</a></h6>
                 </div>
             </div>
-            <div class="row d-flex">
-                <div class="button">
-                    ₱ 150.00
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/31.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x1</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Elite Charged TM</h6>
+                </div>
+            </div>
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/30.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x10</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Ultra Ball</h6>
                 </div>
             </div>
         </div>
+        <div class="row d-flex flex-row">
+            <div class="button col-5 border">
+                ₱ 150.00
+            </div>
+            <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                <i class="bi bi-cart-plus"></i>
+            </div>
 
+        </div>
+    </div>
 
+    <!-- POP UP CARD 2 -->
+    <div class="pop-up" id='ultraRaidBox'>
+        <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('ultraRaidBox')"></div>
+        <div class="col d-flex justify-content-center align-items-center m-2">
+            <img src="assets/img/dailybundlesboxes/db4.png" alt="">
+        </div>
+        <div class="col">
+            <h6 style="font-weight: bold;">Ultra Raid Box</h6>
+        </div>
+        <div class="row content-items">
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/25.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x3</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Remote Raid Pass</h6>
+                </div>
+            </div>
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/24.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x3</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Premium Battle Pass</h6>
+                </div>
+            </div>
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/23.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x1</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Egg Incubator</h6>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex flex-row">
+            <div class="button col-5 border">
+                ₱ 150.00
+            </div>
+            <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                <i class="bi bi-cart-plus"></i>
+            </div>
+        </div>
+    </div>
 
+    <!-- POP UP CARD 3 -->
+    <div class="pop-up" id='mightBox'>
+        <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('mightBox')"></div>
+        <div class="col d-flex justify-content-center align-items-center m-2">
+            <img src="assets/img/dailybundlesboxes/db5.png" alt="">
+        </div>
+        <div class="col">
+            <h6 style="font-weight: bold;">Might and Mastery Box</h6>
+        </div>
+        <div class="row content-items">
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/28.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x1</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Postcard Pages</h6>
+                </div>
+            </div>
 
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/25.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x3</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Remote Raid Pass</h6>
+                </div>
+            </div>
 
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/24.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x2</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Premium Battle Pass</h6>
+                </div>
+            </div>
 
+        </div>
+        <div class="row d-flex flex-row">
+            <div class="button col-5 border">
+                ₱ 150.00
+            </div>
+            <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                <i class="bi bi-cart-plus"></i>
+            </div>
+        </div>
+    </div>
 
+    <!-- POP UP CARD 4 -->
+    <div class="pop-up" id='ultraHatchBox'>
+        <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('ultraHatchBox')"></div>
+        <div class="col d-flex justify-content-center align-items-center m-2">
+            <img src="assets/img/dailybundlesboxes/db1.png" alt="">
+        </div>
+        <div class="col">
+            <h6 style="font-weight: bold;">Ultra Hatch Box</h6>
+        </div>
+        <div class="row content-items">
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/28.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x15</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Super Incubator</h6>
+                </div>
+            </div>
 
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/25.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x10</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Egg Incubator</h6>
+                </div>
+            </div>
 
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/24.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x5</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Proffin</h6>
+                </div>
+            </div>
 
+        </div>
+        <div class="row d-flex flex-row">
+            <div class="button col-5 border">
+                ₱ 150.00
+            </div>
+            <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                <i class="bi bi-cart-plus"></i>
+            </div>
+        </div>
+    </div>
 
+    <!-- POP UP CARD 5 -->
+    <div class="pop-up" id='deepBox'>
+        <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('deepBox')"></div>
+        <div class="col d-flex justify-content-center align-items-center m-2">
+            <img src="assets/img/dailybundlesboxes/db7.png" alt="">
+        </div>
+        <div class="col">
+            <h6 style="font-weight: bold;">Deep Depths Ultra Ticket Box</h6>
+        </div>
+        <div class="row content-items">
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/32.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x1</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Ticket</h6>
+                    <h6 style="font-size: 0.9rem;"><a href="pages/page4/event.html"
+                            style="text-decoration: none; color: #2E8F9F;">View Event Details</a></h6>
+                </div>
+            </div>
 
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/34.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x2</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Max Revive</h6>
+                </div>
+            </div>
 
+        </div>
+        <div class="row d-flex flex-row">
+            <div class="button col-5 border">
+                ₱ 150.00
+            </div>
+            <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                <i class="bi bi-cart-plus"></i>
+            </div>
+        </div>
+    </div>
 
+    <!-- POP UP CARD 6 -->
+    <div class="pop-up" id='megaBox'>
+        <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('megaBox')"></div>
+        <div class="col d-flex justify-content-center align-items-center m-2">
+            <img src="assets/img/dailybundlesboxes/db3.png" alt="">
+        </div>
+        <div class="col">
+            <h6 style="font-weight: bold;">Mega Absol Raid Day Ultra Ticket Box</h6>
+        </div>
+        <div class="row content-items">
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/33.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x1</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Ticket</h6>
+                    <h6 style="font-size: 0.9rem;"><a href="pages/page4/event.html"
+                            style="text-decoration: none; color: #2E8F9F;">View Event Details</a></h6>
+                </div>
+            </div>
 
-        
+            <!-- SUBITEM 1 -->
+            <div class="row">
+                <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                    <img src="assets/img/items/24.png" alt="">
+                    <h6 style="font-size: 0.8rem;">x1</h6>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h6 style="font-size: 0.9rem;">Premium Battle Pass</h6>
+                </div>
+            </div>
+
+        </div>
+        <div class="row d-flex flex-row">
+            <div class="button col-5 border">
+                ₱ 150.00
+            </div>
+            <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                <i class="bi bi-cart-plus"></i>
+            </div>
+        </div>
+    </div>
+
 
     <!-- PokeCoins -->
 
@@ -349,8 +566,31 @@
                         <h1>110 PokeCoins</h1>
                         <h2>10 Web Store Bonus Coins</h2>
                     </div>
-                    <div class="card-button">
+                    <div class="card-button" onclick="showCard('110')">
                         ₱ 29.00
+                    </div>
+                </div>
+            </div>
+
+            <!-- POKECOIN POP UP CARD 1 -->
+            <div class="pop-up" id='110'>
+                <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('110')"></div>
+                <div class="col d-flex justify-content-center align-items-center m-2">
+                    <img src="assets/img/coins/1.png" alt="">
+                </div>
+                <div class="col">
+                    <h6 style="font-weight: bold; font-size: 2rem;">110 Poke Coins</h6>
+                </div>
+                <div class="row content-items">
+                    <h6>+ 10 Web Store Bonus Coins</h6>
+
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="button col-5 border">
+                        ₱ 29.00
+                    </div>
+                    <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                        <i class="bi bi-cart-plus"></i>
                     </div>
                 </div>
             </div>
@@ -366,8 +606,31 @@
                         <h1>600 PokeCoins</h1>
                         <h2>50 Web Store Bonus Coins</h2>
                     </div>
-                    <div class="card-button">
+                    <div class="card-button" onclick="showCard('600')">
                         ₱ 149.00
+                    </div>
+                </div>
+            </div>
+
+            <!-- POKECOIN POP UP CARD 2 -->
+            <div class="pop-up" id='600'>
+                <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('600')"></div>
+                <div class="col d-flex justify-content-center align-items-center m-2">
+                    <img src="assets/img/coins/2.png" alt="">
+                </div>
+                <div class="col">
+                    <h6 style="font-weight: bold; font-size: 2rem;">600 Poke Coins</h6>
+                </div>
+                <div class="row content-items">
+                    <h6>+ 50 Web Store Bonus Coins</h6>
+
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="button col-5 border">
+                        ₱ 149.00
+                    </div>
+                    <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                        <i class="bi bi-cart-plus"></i>
                     </div>
                 </div>
             </div>
@@ -383,8 +646,31 @@
                         <h1>1,300 PokeCoins</h1>
                         <h2>100 Web Store Bonus Coins</h2>
                     </div>
-                    <div class="card-button">
+                    <div class="card-button" onclick="showCard('1300')">
                         ₱ 245.00
+                    </div>
+                </div>
+            </div>
+
+            <!-- POKECOIN POP UP CARD 3 -->
+            <div class="pop-up" id='1300'>
+                <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('1300')"></div>
+                <div class="col d-flex justify-content-center align-items-center m-2">
+                    <img src="assets/img/coins/3.png" alt="">
+                </div>
+                <div class="col">
+                    <h6 style="font-weight: bold; font-size: 2rem;">1,300 Poke Coins</h6>
+                </div>
+                <div class="row content-items">
+                    <h6>+ 100 Web Store Bonus Coins</h6>
+
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="button col-5 border">
+                        ₱ 245.00
+                    </div>
+                    <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                        <i class="bi bi-cart-plus"></i>
                     </div>
                 </div>
             </div>
@@ -400,8 +686,31 @@
                         <h1>2,700 PokeCoins</h1>
                         <h2>200 Web Store Bonus Coins</h2>
                     </div>
-                    <div class="card-button">
+                    <div class="card-button" onclick="showCard('2700')">
                         ₱ 500.65
+                    </div>
+                </div>
+            </div>
+
+            <!-- POKECOIN POP UP CARD 4 -->
+            <div class="pop-up" id='2700'>
+                <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('2700')"></div>
+                <div class="col d-flex justify-content-center align-items-center m-2">
+                    <img src="assets/img/coins/4.png" alt="">
+                </div>
+                <div class="col">
+                    <h6 style="font-weight: bold; font-size: 2rem;">2,700 Poke Coins</h6>
+                </div>
+                <div class="row content-items">
+                    <h6>+ 200 Web Store Bonus Coins</h6>
+
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="button col-5 border">
+                        ₱ 500.65
+                    </div>
+                    <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                        <i class="bi bi-cart-plus"></i>
                     </div>
                 </div>
             </div>
@@ -417,8 +726,31 @@
                         <h1>5,600 PokeCoins</h1>
                         <h2>400 Web Store Bonus Coins</h2>
                     </div>
-                    <div class="card-button">
+                    <div class="card-button" onclick="showCard('5600')">
                         ₱ 994.50
+                    </div>
+                </div>
+            </div>
+
+            <!-- POKECOIN POP UP CARD 5 -->
+            <div class="pop-up" id='5600'>
+                <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('5600')"></div>
+                <div class="col d-flex justify-content-center align-items-center m-2">
+                    <img src="assets/img/coins/4.png" alt="">
+                </div>
+                <div class="col">
+                    <h6 style="font-weight: bold; font-size: 2rem;">5,600 Poke Coins</h6>
+                </div>
+                <div class="row content-items">
+                    <h6>+ 400 Web Store Bonus Coins</h6>
+
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="button col-5 border">
+                        ₱994.50
+                    </div>
+                    <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                        <i class="bi bi-cart-plus"></i>
                     </div>
                 </div>
             </div>
@@ -434,12 +766,38 @@
                         <h1>15,500 PokeCoins</h1>
                         <h2>1,000 Web Store Bonus Coins</h2>
                     </div>
-                    <div class="card-button">
+                    <div class="card-button" onclick="showCard('15500')">
                         ₱ 2,507.50
                     </div>
                 </div>
             </div>
+
+            <!-- POKECOIN POP UP CARD 6 -->
+            <div class="pop-up" id='15500'>
+                <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('15500')"></div>
+                <div class="col d-flex justify-content-center align-items-center m-2">
+                    <img src="assets/img/coins/4.png" alt="">
+                </div>
+                <div class="col">
+                    <h6 style="font-weight: bold; font-size: 2rem;">15,500 Poke Coins</h6>
+                </div>
+                <div class="row content-items">
+                    <h6>+ 1000 Web Store Bonus Coins</h6>
+
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="button col-5 border">
+                        ₱ 2507.50
+                    </div>
+                    <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+
     </section>
 
     <!-- Daily Bundles Section -->
@@ -464,12 +822,56 @@
                     </div>
                     <div class="text-box">
                         <h1>EXPLORER BOX</h1>
-                        <div class="card-button">
+                        <div class="card-button" onclick="showCard('explorerBox')">
                             <img src="assets/img/dailybundlesboxes/pokecoin.png" style="width: 30px;" alt=""> 2,250
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- DAILY BUNDLE POP UP CARD 1 -->
+            <div class="pop-up" id='explorerBox'>
+                <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('explorerBox')"></div>
+                <div class="col d-flex justify-content-center align-items-center m-2">
+                    <img src="assets/img/dailybundlesboxes/db1.png" alt="">
+                </div>
+                <div class="col">
+                    <h6 style="font-weight: bold;">Explorer Box</h6>
+                </div>
+                <div class="row content-items">
+                    <!-- SUBITEM 1 -->
+                    <div class="row">
+                        <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                            <img src="assets/img/items/supinc.png" alt="">
+                            <h6 style="font-size: 0.8rem;">x20</h6>
+                        </div>
+                        <div class="col-8 d-flex flex-column justify-content-center">
+                            <h6 style="font-size: 0.9rem;">Super Incubator</h6>
+                        </div>
+                    </div>
+
+                    <!-- SUBITEM 1 -->
+                    <div class="row">
+                        <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                            <img src="assets/img/items/pokeball.webp" alt="">
+                            <h6 style="font-size: 0.8rem;">x100</h6>
+                        </div>
+                        <div class="col-8 d-flex flex-column justify-content-center">
+                            <h6 style="font-size: 0.9rem;">Pokeball</h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="button col-5 border text-center">
+                        <img src="assets/img/dailybundlesboxes/pokecoin.png" style="width: 30px;" alt=""> 2,250
+                    </div>
+                    <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+
             <!-- Daily Bundle 2 -->
             <div class="card">
                 <div class="card-content">
@@ -484,12 +886,67 @@
                     </div>
                     <div class="text-box">
                         <h1>VOYAGER BOX</h1>
-                        <div class="card-button">
+                        <div class="card-button" onclick="showCard('voyagerBox')">
                             <img src="assets/img/dailybundlesboxes/pokecoin.png" style="width: 30px;" alt=""> 2,200
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- DAILY BUNDLE POP UP CARD 2 -->
+            <div class="pop-up" id='voyagerBox'>
+                <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('voyagerBox')"></div>
+                <div class="col d-flex justify-content-center align-items-center m-2">
+                    <img src="assets/img/dailybundlesboxes/db2.png" alt="">
+                </div>
+                <div class="col">
+                    <h6 style="font-weight: bold;">Voyager Box</h6>
+                </div>
+                <div class="row content-items">
+                    <!-- SUBITEM 1 -->
+                    <div class="row">
+                        <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                            <img src="assets/img/items/17.png" alt="">
+                            <h6 style="font-size: 0.8rem;">x20</h6>
+                        </div>
+                        <div class="col-8 d-flex flex-column justify-content-center">
+                            <h6 style="font-size: 0.9rem;">Incense</h6>
+                        </div>
+                    </div>
+
+                    <!-- SUBITEM 1 -->
+                    <div class="row">
+                        <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                            <img src="assets/img/items/18.png" alt="">
+                            <h6 style="font-size: 0.8rem;">x20</h6>
+                        </div>
+                        <div class="col-8 d-flex flex-column justify-content-center">
+                            <h6 style="font-size: 0.9rem;">Lucky Egg</h6>
+                        </div>
+                    </div>
+
+                    <!-- SUBITEM 1 -->
+                    <div class="row">
+                        <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                            <img src="assets/img/items/19.png" alt="">
+                            <h6 style="font-size: 0.8rem;">x20</h6>
+                        </div>
+                        <div class="col-8 d-flex flex-column justify-content-center">
+                            <h6 style="font-size: 0.9rem;">Star Piece</h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="button col-5 border text-center">
+                        <img src="assets/img/dailybundlesboxes/pokecoin.png" style="width: 30px;" alt=""> 2,250
+                    </div>
+                    <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+
             <!-- Daily Bundle 3 -->
             <div class="card">
                 <div class="card-content">
@@ -499,19 +956,74 @@
                                 style="width: 180px; rotate: -0deg;" alt="">
                         </div>
                         <div class="bundle-box">
-                            <img src="assets/img/dailybundlesboxes/db1.png" alt="">
+                            <img src="assets/img/dailybundlesboxes/db3.png" alt="">
                         </div>
                     </div>
                     <div class="text-box">
-                        <h1>EXPLORER BOX</h1>
-                        <div class="card-button">
-                            <img src="assets/img/dailybundlesboxes/pokecoin.png" style="width: 30px;" alt=""> 2,250
+                        <h1>LEGEND BOX</h1>
+                        <div class="card-button" onclick="showCard('legendBox')">
+                            <img src="assets/img/dailybundlesboxes/pokecoin.png" style="width: 30px;" alt=""> 9,400
                         </div>
+
                     </div>
                 </div>
             </div>
 
+            <!-- DAILY BUNDLE POP UP CARD 2 -->
+            <div class="pop-up" id='legendBox'>
+                <div class="bi bi-x close-btn" style="cursor: pointer;" onclick="closeCard('legendBox')"></div>
+                <div class="col d-flex justify-content-center align-items-center m-2">
+                    <img src="assets/img/dailybundlesboxes/db3.png" alt="">
+                </div>
+                <div class="col">
+                    <h6 style="font-weight: bold;">Legend Box</h6>
+                </div>
+                <div class="row content-items">
+                    <!-- SUBITEM 1 -->
+                    <div class="row">
+                        <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                            <img src="assets/img/items/22.png" alt="">
+                            <h6 style="font-size: 0.8rem;">x20</h6>
+                        </div>
+                        <div class="col-8 d-flex flex-column justify-content-center">
+                            <h6 style="font-size: 0.9rem;">Chared TM</h6>
+                        </div>
+                    </div>
 
+                    <!-- SUBITEM 1 -->
+                    <div class="row">
+                        <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                            <img src="assets/img/items/31.png" alt="">
+                            <h6 style="font-size: 0.8rem;">x20</h6>
+                        </div>
+                        <div class="col-8 d-flex flex-column justify-content-center">
+                            <h6 style="font-size: 0.9rem;">Fast TM</h6>
+                        </div>
+                    </div>
+
+                    <!-- SUBITEM 1 -->
+                    <div class="row">
+                        <div class="col-4 p-0 d-flex justify-content-center align-items-center item-img">
+                            <img src="assets/img/items/24.png" alt="">
+                            <h6 style="font-size: 0.8rem;">x100</h6>
+                        </div>
+                        <div class="col-8 d-flex flex-column justify-content-center">
+                            <h6 style="font-size: 0.9rem;">Premium Battle Pass</h6>
+                        </div>
+                    </div>
+                    
+                    
+
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="button col-5 border text-center">
+                        <img src="assets/img/dailybundlesboxes/pokecoin.png" style="width: 30px;" alt=""> 9,400
+                    </div>
+                    <div class="border d-flex justify-content-center align-items-center add-to-cart">
+                        <i class="bi bi-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
 
 
         </div>
