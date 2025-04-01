@@ -128,4 +128,8 @@ function logout() {
     localStorage.removeItem("loggedIn"); // Remove login status
     localStorage.removeItem("username"); // Remove username
     location.reload(); // Refresh the page to update UI
+
+    alert("See you again soon!");
+    window.location.href = "/PocketMonstersTB21/index.html"; // Redirect to landing page
+
 }
