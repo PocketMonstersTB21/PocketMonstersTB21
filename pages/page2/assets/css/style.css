@@ -18,6 +18,34 @@ body {
     align-items: center;
 }
 
+.back-to-store {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.back-to-store:hover {
+    transform: translateX(-5px);
+    color: #e76e4b;
+}
+
+.back-to-store i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.back-to-store:hover i {
+    transform: rotate(-45deg);
+}
+
 .form-container {
     min-width: 350px;
     height: auto;

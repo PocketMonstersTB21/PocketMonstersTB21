@@ -10,19 +10,28 @@ body {
 }
 
 nav {
+
     background-image: url('../img/navbarbg.png');
     background-size: cover;
     background-position: center;
 
+    #group-logo{
+        width: 100px;
+        margin: 0;
+    }
+
+    #logo-container{
+        margin: 0px 15px;
+    }
+
+    #store-name{
+        width: 10rem;
+        filter: drop-shadow(2px 2px 0px black);
+    }
+
     .logo {
         width: 120px;
         height: auto;
-    }
-
-    .store-name {
-        font-size: 2.2rem;
-        color: #ffc107;
-        font-family: 'Pokemon Solid', sans-serif;
     }
 
     .nav-link {
@@ -1004,9 +1013,6 @@ nav {
         width: 80px;
     }
 
-    nav .store-name {
-        font-size: 1.4rem;
-    }
 
     .outerContainer {
         width: 40%;
@@ -1067,10 +1073,31 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    
+    nav .container{
+        #logo-container{
+            margin:0px;
+        }
+
+        #group-logo{
+            width: 80px;
+        }
+
+        #logo-container{
+            #pogo-logo{
+                width: 10px;
+            }
+        }
+        
+    }    
+
     .landing-section {
         height: 60vh;
         height: 60vh;
     }
+
+
+
 
     .landing-video {
         width: 100%;
