@@ -219,6 +219,15 @@ h1 {
     font-size: 14px;
     border-radius: 50px 50px 0px 0px;
 
+    .container-footer{
+        width: 100%;
+        padding: 40px 70px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        border-radius: 50px 50px 0px 0px;
+    }
+
 }
 
 .footer-title {
