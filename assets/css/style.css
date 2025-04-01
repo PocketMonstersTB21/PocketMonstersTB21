@@ -716,7 +716,7 @@ nav {
         align-items: center;
         flex-wrap: wrap;
         gap: 30px;
-        border: solid;
+        /* border: solid; */
     }
 
     .card {
