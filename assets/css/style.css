@@ -819,10 +819,11 @@ nav {
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     padding: 40px 30px;
     padding-top: 250px;
     flex-wrap: wrap;
+    flex-direction: column;
     transition: 1s;
 
     background-image: url("../img/itemboxesbg.jpeg");
@@ -855,7 +856,7 @@ nav {
     .cards-container {
         /* border: solid; */
         min-width: 300px;
-        width: 1200px;
+        width: 70vw;
         height: 70%;
         display: flex;
         justify-content: center;
